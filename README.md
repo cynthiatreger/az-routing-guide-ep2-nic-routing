@@ -19,7 +19,7 @@ Part of creating an Azure VM is configuring its NIC(s). A NIC is connected to a 
 
 Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a per-VM routing table. 
 
-For clarity the last environment of Episode 1 has been slightly adapted:
+For clarity the last environment of Episode #1 has been slightly adapted:
 - Spoke1VM2 is removed from Spoke1/subnet2
 - Spoke2 VNET, which had GW transit disabled, is not represented
 - A 2nd NIC is attached to Spoke1VM and connected to Spoke1/subnet2, while the exisitng NIC is connected to Spoke1/subnet1. 
