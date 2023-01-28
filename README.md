@@ -8,7 +8,7 @@ This short episode is to understand better the routes we have been looking at so
 
 [2.1. Network Interface Card (NIC)](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#21network-interface-card-nic)
 
-[2.2. *Effective routes*/System Routes/UDRs/Customs routes & *Route Tables*]
+[2.2. *Effective routes*/System Routes/UDRs/Customs routes & *Route Tables*](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
 
 # 2.1.	Network Interface Card (NIC)
 Before exploring the Azure routing terminology, let’s put some context around the idea of NIC in Azure vs On-Prem.
