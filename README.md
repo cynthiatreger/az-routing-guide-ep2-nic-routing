@@ -40,7 +40,7 @@ In Azure, *Effective routes/System Routes/UDRs/Customs routes/Route Tables* **ap
 
 :arrow_right: There is no overall routing table at the VM-level, that would aggregate the routing information received through its NICs.
 
-## *Effective routes*
+### *Effective routes*
 
 The *Effective routes* of a NIC is the routing table of the NIC and lists the prefixes reachable from the NIC. There are the routes available on the subnet to which this VM NIC is connected.
 
@@ -50,11 +50,11 @@ There is **NO recursive routing** performed at the NIC-level: each prefix in the
 
 The *Effective routes* include *System Routes* and *Custom Routes*.
 
-## System routes (=*Default* routes)
+### System routes (=*Default* routes)
 
 The local VNET IP range and the routes created automatically by VNET peering are called [System routes](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#system-routes) and tagged “*Default*” in the *Effective routes*.
 
-## Route table and User Defined Routes (UDRs)
+### Route table and User Defined Routes (UDRs)
 
 A *Route table* is an Azure resource that contains static routes or UDRs ([User Defined Routes](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#user-defined)) and that is associated to a subnet in a VNET to influence the *Effective Routes* of the NICs contained in that subnet (and subsequently the attached VMs).
 
@@ -62,6 +62,6 @@ Once associated to a subnet, a UDR will reconfigure (add and/or override) the *E
 
 :arrow_right: UDRs take precedence over *Default* routes.
 
-## Custom routes are either UDRs or routes programmed by a Virtual Network GW or Route Server (ARS)
+### Custom routes are either UDRs or routes programmed by a Virtual Network GW or Route Server (ARS)
 
 Finally, Custom routes refer to routes created either by UDRs or received from On-Prem and programmed by a Virtual Network Gateway or programmed by a Route Server.
