@@ -1,14 +1,16 @@
 # Episode #2: ~~VM Routing~~ NIC Routing
 
+*Introduction note: This guide aims at providing a better understanding of the Azure routing mechanisms and how they translate from On-Prem networking. The focus will be on private routing in Hub & Spoke topologies. For clarity, network security and resiliency best practices as well as internet breakout considerations have been left out of this guide.*
+##
+[2.1. Network Interface Card (NIC)](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#21network-interface-card-nic)
+
+[2.2. *Effective routes*/System Routes/UDRs/Customs routes & *Route tables*](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
+##
 In our Azure networking documentation you will find terms like *Route Table*, *Effective routes*, *UDRs* (for User Defined Routes) etc. that are often associated together and which can all sometimes be confusing.
 
 None of these concepts actually translates to the good old routing table I was used to in traditional networking. 
 
 This short episode is to understand better the routes we have been looking at so far and the elementary routing components used in Azure Networking.
-
-[2.1. Network Interface Card (NIC)](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#21network-interface-card-nic)
-
-[2.2. *Effective routes*/System Routes/UDRs/Customs routes & *Route Tables*](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
 
 # 2.1.	Network Interface Card (NIC)
 Before exploring the Azure routing terminology, let’s put some context around the idea of NIC in Azure vs On-Prem.
