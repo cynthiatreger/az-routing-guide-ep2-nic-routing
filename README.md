@@ -8,9 +8,9 @@
 ##
 In our Azure networking documentation you will find terms like *Route Table*, *Effective routes*, *UDRs* (for User Defined Routes) etc. that are often associated together and which can all sometimes be confusing.
 
-None of these concepts actually translates to the good old routing table I was used to in traditional networking. 
+The main purpose of this short episode is to highlight that none of these concepts actually translates to the good old routing table used in traditional networking. 
 
-This short episode is to understand better the routes we have been looking at so far and the elementary routing components used in Azure Networking.
+It will also provide a description of the routes we have been looking at so far and the elementary routing components used in Azure Networking.
 
 # 2.1.	Network Interface Card (NIC)
 Before exploring the Azure routing terminology, let’s put some context around the idea of NIC in Azure vs On-Prem.
