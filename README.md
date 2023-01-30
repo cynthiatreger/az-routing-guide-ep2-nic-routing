@@ -1,3 +1,4 @@
+## [<< BACK TO THE MAIN MENU](https://github.com/cynthiatreger/az-routing-guide-intro)
 # Episode #2: ~~VM Routing~~ NIC Routing
 
 *Introduction note: This guide aims at providing a better understanding of the Azure routing mechanisms and how they translate from On-Prem networking. The focus will be on private routing in Hub & Spoke topologies. For clarity, network security and resiliency best practices as well as internet breakout considerations have been left out of this guide.*
@@ -67,3 +68,6 @@ Once associated to a subnet, a UDR will reconfigure (add and/or override) the *E
 ### Custom routes are either UDRs or routes programmed by a Virtual Network GW or Route Server (ARS)
 
 Finally, Custom routes refer to routes created either by UDRs or received from On-Prem and programmed by a Virtual Network Gateway or programmed by a Route Server.
+##
+
+### [>> EPISODE #3](https://github.com/cynthiatreger/az-routing-guide-ep3-nva-routing-fundamentals) (out 01/02)
