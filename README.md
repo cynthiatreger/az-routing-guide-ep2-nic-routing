@@ -32,7 +32,7 @@ For clarity the last environment of Episode #1 has been slightly adapted:
 
 :arrow_right: NIC1 contains the default *Effective routes* that come with the VNET peering of Spoke1 and the Virtual Network GW in the Hub.
 
-:arrow_right:	NIC2, because of the *Route Table* associated to Spoke1/subnet2 configured to prevent the propagation of On-Prem route (*GW route route propagation* = disabled), only has the local VNET and peered VNET ranges in its *Effective routes*.
+:arrow_right:	NIC2, because of the *Route table* associated to Spoke1/subnet2 configured to prevent the propagation of On-Prem route (*GW route route propagation* = disabled), only has the local VNET and peered VNET ranges in its *Effective routes*.
 
 Because of this subtility, the term “*Effective routes* of a VM” used in this article and that you may often see in other documentation as well is not completely precise as it is a shortcut for “*Effective routes* of a NIC attached to a VM”.
 
