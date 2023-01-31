@@ -10,7 +10,7 @@
 
 &emsp;[2.1.2. VMs and NICs](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing#212-vms-and-nics)
 
-&emsp;[2.1.3. ]
+&emsp;[2.1.3. Concept representation](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing#213-concept-representation)
 
 [2.2. Azure routes etc](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
 
@@ -43,7 +43,7 @@ A NIC is connected to a subnet in a VNET and gets allocated an IP address from t
 
 Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a "per-VM routing table". 
 
-## 2.1.3. Concept Representation
+## 2.1.3. Concept representation
 For clarity the last environment of Episode #1 has been slightly adapted:
 - Spoke1VM2 is removed from Spoke1/subnet2
 - Spoke2 VNET, which had GW transit disabled, is not represented
