@@ -35,11 +35,9 @@ Before exploring the Azure routing terminology, let’s put some context around 
 A standard On-Prem L3 networking device (switch/router/firewall) comes with the idea of at least 1 inbound + 1 outbound interface and transit routing capabilities. In Azure, VMs too can provide transit routing or have multiple Network Interface Cards (NICs). However most of the VMs receive and forward traffic out of the same NIC, like in the [Episode #1](https://github.com/cynthiatreger/az-routing-guide-ep1-vnet-peering-and-virtual-network-gateways) scenarios.
 
 ## 2.1.2. VMs and NICs
-Part of creating an Azure VM is configuring its NIC(s). 
+Part of creating an Azure VM is configuring its NIC(s). A NIC is connected to a subnet in a VNET and gets allocated an IP address from that subnet. 
 
-:arrow_right: A VM in a VNET can have one or multiple NICs. The VM and its NICs must be in the same VNET.
-
-A NIC is connected to a subnet in a VNET and gets allocated an IP address from that subnet. 
+:arrow_right: A VM can have one or multiple NICs. The VM and its NICs must be in the same VNET.
 
 Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a "per-VM routing table". 
 
