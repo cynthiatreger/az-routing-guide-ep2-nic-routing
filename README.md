@@ -37,7 +37,7 @@ A standard On-Prem L3 networking device (switch/router/firewall) comes with the 
 ## 2.1.2. VMs and NICs
 Part of creating an Azure VM is configuring its NIC(s). A NIC is connected to a subnet in a VNET and gets allocated an IP address from that subnet. 
 
-:arrow_right: A VM can have one or multiple NICs. The VM and its NICs must be in the same VNET.
+:arrow_right: A VM can have one or multiple NICs. NICs can be in different subnets, but the VM and its NICs must all be in the same VNET.
 
 Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a "per-VM routing table". 
 
