@@ -1,11 +1,12 @@
-## [<< BACK TO THE MAIN MENU](https://github.com/cynthiatreger/az-routing-guide-intro)
+### [<< BACK TO THE MAIN MENU](https://github.com/cynthiatreger/az-routing-guide-intro)
+##
 # Episode #2: ~~VM Routing~~ NIC Routing
 
 *Introduction note: This guide aims at providing a better understanding of the Azure routing mechanisms and how they translate from On-Prem networking. The focus will be on private routing in Hub & Spoke topologies. For clarity, network security and resiliency best practices as well as internet breakout considerations have been left out of this guide.*
 ##
 [2.1. Network Interface Card (NIC)](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#21network-interface-card-nic)
 
-[2.2. *Effective routes*/System Routes/UDRs/Customs routes & *Route tables*](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
+[2.2. *Effective routes*, UDRs & *Route tables*](https://github.com/cynthiatreger/az-routing-guide-ep2-nic-routing/blob/main/README.md#22-azure-routes-etc)
 ##
 In our Azure networking documentation you will find terms like *Route Table*, *Effective routes*, *UDRs* (for User Defined Routes) etc. that are often associated together and which can all sometimes be confusing.
 
@@ -57,7 +58,7 @@ The *Effective routes* include *System Routes* and *Custom Routes*.
 
 The local VNET IP range and the routes created automatically by VNET peering are called [System routes](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#system-routes) and tagged “*Default*” in the *Effective routes*.
 
-### Route table and User Defined Routes (UDRs)
+### *Route table* and User Defined Routes (UDRs)
 
 A *Route table* is an Azure resource that contains static routes or UDRs ([User Defined Routes](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#user-defined)) and that is associated to a subnet in a VNET to influence the *Effective Routes* of the NICs contained in that subnet (and subsequently the attached VMs).
 
@@ -69,5 +70,4 @@ Once associated to a subnet, a UDR will reconfigure (add and/or override) the *E
 
 Finally, Custom routes refer to routes created either by UDRs or received from On-Prem and programmed by a Virtual Network Gateway or programmed by a Route Server.
 ##
-
 ### [>> EPISODE #3](https://github.com/cynthiatreger/az-routing-guide-ep3-nva-routing-fundamentals) (out 01/02)
