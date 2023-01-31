@@ -17,11 +17,11 @@ It will also provide a description of the routes we have been looking at so far 
 # 2.1.	Network Interface Card (NIC)
 Before exploring the Azure routing terminology, let’s put some context around the idea of NIC in Azure vs On-Prem.
 
-A standard On-Prem L3 networking device (switch/router/firewall) comes with the idea of at least 1 inbound + 1 outbound interface and transit routing capabilities. In Azure, VMs too can provide transit routing or have multiple Network Interface Cards (NICs). However most of the VMs receive and forward traffic out of the same NIC, like in the scenarios in [Episode #1](https://github.com/cynthiatreger/az-routing-guide-ep1-vnet-peering-and-virtual-network-gateways).
+A standard On-Prem L3 networking device (switch/router/firewall) comes with the idea of at least 1 inbound + 1 outbound interface and transit routing capabilities. In Azure, VMs too can provide transit routing or have multiple Network Interface Cards (NICs). However most of the VMs receive and forward traffic out of the same NIC, like in the in [Episode #1](https://github.com/cynthiatreger/az-routing-guide-ep1-vnet-peering-and-virtual-network-gateways) scenarios.
 
 Part of creating an Azure VM is configuring its NIC(s). A NIC is connected to a subnet in a VNET and gets allocated an IP address from that subnet. 
 
-Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a per-VM routing table. 
+Unlike a physical L3 device, if more than 1 NIC is attached to the VM, there still wouldn’t be a "per-VM routing table". 
 
 For clarity the last environment of Episode #1 has been slightly adapted:
 - Spoke1VM2 is removed from Spoke1/subnet2
