@@ -85,7 +85,7 @@ A *Route table* is an Azure resource that contains static routes or UDRs ([User 
 
 Once associated to a subnet, a UDR will reconfigure (add and/or override) the *Effective routes* of the NICs connected to this subnet. UDRs appear with Source = "*User*" in the *Effective routes*.
 
-:arrow_right: UDRs take precedence over *Default* routes (see [*How Azure selects a route*](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#how-azure-selects-a-route) for more details.)
+:arrow_right: UDRs take precedence over *Default* routes of same prefix length (see [*How Azure selects a route*](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#how-azure-selects-a-route) for more details.)
 
 ### 2.2.4. Custom routes are either UDRs or routes programmed by a Virtual Network GW or Route Server (ARS)
 
